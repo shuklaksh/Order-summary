@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;600&family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root {
+    --Paleblue: hsl(225, 100%, 94%);
+    --Brightblue: hsl(245, 75%, 52%);
+    --Verypaleblue: hsl(225, 100%, 98%);
+    --Desaturatedblue: hsl(224, 23%, 55%);
+    --Darkblue: hsl(223, 47%, 23%);
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(./images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-color: var(--Paleblue);
+    font-family: 'Outfit',sans-serif;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: white;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+.container img {
+    max-width: 100%;
+    border-radius: 15px 15px 0px 0px;
+}
+.utext {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.utext h2 {
+    padding-top: 25px;
+    padding-bottom: 13px;
+}
+.utext p {
+    max-width: 70%;
+    text-align: center;
+    color: var(--Desaturatedblue);
+    margin-bottom: 20px;
+}
+
+.charges {
+    background-color: var(--Paleblue);
+    padding: 10px 10px 10px 10px;
+    max-width: 80%;
+    border-radius: 9px;
+    margin-left: 10%;
+    display: flex;
+    flex-direction: row;
+    
+}
+.mtext {
+    padding-right: 65px;
+}
+#change {
+   align-self: center;
+   padding-bottom: 3px;
+}
+
+.bottom {
+    display: flex;
+    max-width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#btn {
+    margin-top: 10px;
+    width: 80%;
+    height: 5vh;
+    border-radius: 9px;
+    box-shadow: 0px 10px 8px #d7d7d7;;
+    align-self: center;
+    background-color: var(--Brightblue);
+    color: white;
+    font-size: 17px;
+    margin-top: 40px;
+    margin-bottom: 13px;
+}
+.bottom p {
+    color: var(--Desaturatedblue);
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+@media (min-width: 500px) {
+    .container{
+        width: 370px;
+        height: 65vh;
+    }
+}
